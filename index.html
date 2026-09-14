@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mente Serena | Clínica de Psicologia & Saúde Mental</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <meta name="description" content="Psicoterapia presencial e online no Rio de Janeiro. Tratamento para ansiedade, depressão, terapia de casal e infantil. Agende sua primeira conversa pelo WhatsApp.">
+    <meta property="og:title" content="Mente Serena | Clínica de Psicologia & Saúde Mental">
+    <meta property="og:description" content="Psicoterapia humanizada presencial em Copacabana e online para todo o Brasil. Primeira conversa sem custo. Agende agora pelo WhatsApp.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1584467735871-8e85353a8413?w=1200&auto=format&fit=crop&q=80">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mente Serena | Clínica de Psicologia & Saúde Mental">
+    <meta name="twitter:description" content="Psicoterapia humanizada presencial em Copacabana e online para todo o Brasil. Primeira conversa sem custo.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1584467735871-8e85353a8413?w=1200&auto=format&fit=crop&q=80">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sage: {
+                            50: '#f4f7f4',
+                            100: '#e6efe7',
+                            200: '#cddfd1',
+                            300: '#a8c6ae',
+                            400: '#7da887',
+                            500: '#5d8a69',
+                            600: '#476e52',
+                            700: '#3a5844',
+                            800: '#304738',
+                            900: '#283b2f',
+                        },
+                        sand: {
+                            100: '#f7f3ec',
+                            200: '#efe6d8',
+                            300: '#e3d3bc',
+                        },
+                        dark: '#1e2b24'
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+                        serif: ['Fraunces', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body { background-color: #faf8f4; }
+        .pulse-ring { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); animation: pulse-ring-anim 1.8s infinite cubic-bezier(0.66, 0, 0, 1); }
+        @keyframes pulse-ring-anim { to { box-shadow: 0 0 0 18px rgba(37, 211, 102, 0); } }
+        .reveal { opacity: 0; transform: translateY(28px); transition: opacity .7s ease, transform .7s ease; }
+        .reveal.visible { opacity: 1; transform: translateY(0); }
+        details > summary { list-style: none; cursor: pointer; }
+        details > summary::-webkit-details-marker { display: none; }
+        details[open] .faq-icon { transform: rotate(45deg); }
+        .faq-icon { transition: transform .3s ease; }
+        .hero-gradient { background: linear-gradient(160deg, #283b2f 0%, #3a5844 55%, #476e52 100%); }
+        .leaf-pattern { background-image: radial-gradient(rgba(255,255,255,.06) 1.5px, transparent 1.5px); background-size: 26px 26px; }
+    </style>
+</head>
+<body class="font-sans text-dark antialiased">
+
+    <!-- Barra de acolhimento -->
+    <div class="bg-sage-900 text-sage-100 text-center text-sm py-2.5 px-4">
+        <i class="fa-solid fa-heart text-sage-300 mr-2"></i>
+        Primeira conversa de acolhimento <strong>sem custo</strong> — presencial em Copacabana ou online para todo o Brasil.
+        <a href="https://wa.me/5521983228129?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20conversa%20de%20acolhimento%20sem%20custo%20na%20Cl%C3%ADnica%20Mente%20Serena." target="_blank" rel="noopener" class="underline underline-offset-2 font-semibold ml-1 hover:text-white">Agendar agora <i class="fa-solid fa-arrow-right text-xs"></i></a>
+    </div>
+
+    <!-- Header -->
+    <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-sage-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-18 flex items-center justify-between py-3">
+            <a href="#" class="flex items-center group py-1">
+                <img src="logo.svg" alt="Mente Serena - Clínica de Psicologia & Saúde Mental" class="h-12 sm:h-14 w-auto object-contain transition-transform group-hover:scale-[1.02]">
+            </a>
+            <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-sage-800">
+                <a href="#especialidades" class="hover:text-sage-500 transition">Especialidades</a>
+                <a href="#como-funciona" class="hover:text-sage-500 transition">Como funciona</a>
+                <a href="#equipe" class="hover:text-sage-500 transition">Equipe</a>
+                <a href="#depoimentos" class="hover:text-sage-500 transition">Depoimentos</a>
+                <a href="#faq" class="hover:text-sage-500 transition">Dúvidas</a>
+            </nav>
+            <a href="https://wa.me/5521983228129?text=Ol%C3%A1%21%20Quero%20agendar%20uma%20sess%C3%A3o%20de%20psicoterapia%20na%20Cl%C3%ADnica%20Mente%20Serena." target="_blank" rel="noopener" class="hidden md:inline-flex items-center gap-2 bg-sage-600 hover:bg-sage-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition shadow-md shadow-sage-600/20">
+                <i class="fa-brands fa-whatsapp text-base"></i> Agendar sessão
+            </a>
+            <!-- Botão hambúrguer mobile -->
+            <button id="menu-btn" class="md:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5 rounded-lg hover:bg-sage-100 transition" aria-label="Abrir menu" onclick="toggleMenu()">
+                <span id="h1" class="block w-6 h-0.5 bg-sage-800 transition-all duration-300"></span>
+                <span id="h2" class="block w-6 h-0.5 bg-sage-800 transition-all duration-300"></span>
+                <span id="h3" class="block w-6 h-0.5 bg-sage-800 transition-all duration-300"></span>
+            </button>
+        </div>
+        <!-- Menu mobile dropdown -->
+        <div id="mobile-menu" class="md:hidden hidden border-t border-sage-100 bg-white px-4 pb-4 pt-2">
+            <nav class="flex flex-col gap-3 text-sm font-medium text-sage-800">
+                <a href="#especialidades" onclick="closeMenu()" class="py-2 px-3 rounded-lg hover:bg-sage-50 hover:text-sage-600 transition">Especialidades</a>
+                <a href="#como-funciona" onclick="closeMenu()" class="py-2 px-3 rounded-lg hover:bg-sage-50 hover:text-sage-600 transition">Como funciona</a>
+                <a href="#equipe" onclick="closeMenu()" class="py-2 px-3 rounded-lg hover:bg-sage-50 hover:text-sage-600 transition">Equipe</a>
+                <a href="#depoimentos" onclick="closeMenu()" class="py-2 px-3 rounded-lg hover:bg-sage-50 hover:text-sage-600 transition">Depoimentos</a>
+                <a href="#faq" onclick="closeMenu()" class="py-2 px-3 rounded-lg hover:bg-sage-50 hover:text-sage-600 transition">Dúvidas</a>
+                <a href="https://wa.me/5521983228129?text=Ol%C3%A1%21%20Quero%20agendar%20uma%20sess%C3%A3o%20na%20Cl%C3%ADnica%20Mente%20Serena." target="_blank" rel="noopener" class="mt-1 inline-flex items-center justify-center gap-2 bg-sage-600 hover:bg-sage-700 text-white font-semibold px-5 py-3 rounded-full transition">
+                    <i class="fa-brands fa-whatsapp"></i> Agendar sessão
+                </a>
+            </nav>
+        </div>
+
+    </header>
+
+    <!-- Hero -->
+    <section class="hero-gradient leaf-pattern text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28 grid lg:grid-cols-2 gap-14 items-center">
+            <div class="reveal">
+                <span class="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-1.5 text-xs font-semibold tracking-wide uppercase text-sage-100">
+                    <i class="fa-solid fa-leaf"></i> Clínica de Psicologia & Saúde Mental
+                </span>
+                <h1 class="font-serif text-4xl sm:text-5xl lg:text-[3.4rem] leading-tight font-semibold mt-6">
+                    Cuidar da mente é o primeiro passo para <span class="italic text-sage-300">viver leve</span>.
+                </h1>
+                <p class="mt-6 text-sage-100/90 text-lg leading-relaxed max-w-xl">
+                    Psicoterapia humanizada e baseada em evidências para ansiedade, depressão, relacionamentos e autoconhecimento. Atendimento presencial no Rio de Janeiro e online para todo o Brasil.
+                </p>
+                <div class="mt-9 flex flex-col sm:flex-row gap-4">
+                    <a href="https://wa.me/5521983228129?text=Ol%C3%A1%21%20Quero%20iniciar%20meu%20tratamento%20com%20a%20Cl%C3%ADnica%20Mente%20Serena.%20Pode%20me%20passar%20os%20hor%C3%A1rios%20dispon%C3%ADveis%3F" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2.5 bg-[#25D366] hover:bg-[#1ebe5b] text-white font-bold px-8 py-4 rounded-full text-base transition shadow-lg shadow-black/25">
+                        <i class="fa-brands fa-whatsapp text-xl"></i> Falar com a clínica agora
+                    </a>
+                    <a href="#especialidades" class="inline-flex items-center justify-center gap-2 border border-white/30 hover:bg-white/10 text-white font-semibold px-8 py-4 rounded-full text-base transition">
+                        Conhecer especialidades <i class="fa-solid fa-arrow-down text-sm"></i>
+                    </a>
+                </div>
+                <div class="mt-10 flex items-center gap-3 text-sm text-sage-100/80">
+                    <i class="fa-solid fa-lock text-sage-300"></i> Sigilo absoluto garantido pelo Código de Ética Profissional (CRP).
+                </div>
+            </div>
+            <div class="reveal hidden lg:block">
+                <div class="relative">
+                    <div class="absolute -inset-4 bg-sage-300/20 rounded-[2.5rem] rotate-3"></div>
+                    <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=900&q=80" alt="Ambiente acolhedor de terapia" class="relative rounded-[2.5rem] shadow-2xl object-cover h-[540px] w-full">
+                    <div class="absolute -bottom-6 -left-6 bg-white text-dark rounded-2xl shadow-xl p-5 flex items-center gap-4">
+                        <span class="w-12 h-12 rounded-full bg-sage-100 text-sage-600 flex items-center justify-center text-xl"><i class="fa-solid fa-video"></i></span>
+                        <div>
+                            <p class="font-bold text-sm">Atendimento online</p>
+                            <p class="text-xs text-gray-500">Mesma qualidade, de onde você estiver</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-12 relative z-10">
+        <div class="bg-white rounded-3xl shadow-xl border border-sage-100 grid grid-cols-2 lg:grid-cols-4 divide-x divide-sage-100 reveal">
+            <div class="p-7 text-center">
+                <p class="font-serif text-4xl font-semibold text-sage-700">12+</p>
+                <p class="text-sm text-gray-500 mt-1">anos de experiência clínica</p>
+            </div>
+            <div class="p-7 text-center">
+                <p class="font-serif text-4xl font-semibold text-sage-700">3.500+</p>
+                <p class="text-sm text-gray-500 mt-1">sessões realizadas</p>
+            </div>
+            <div class="p-7 text-center">
+                <p class="font-serif text-4xl font-semibold text-sage-700">8</p>
+                <p class="text-sm text-gray-500 mt-1">psicólogos especialistas</p>
+            </div>
+            <div class="p-7 text-center">
+                <p class="font-serif text-4xl font-semibold text-sage-700">97%</p>
+                <p class="text-sm text-gray-500 mt-1">relatam melhora no bem-estar</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Especialidades -->
+    <section id="especialidades" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+        <div class="text-center max-w-2xl mx-auto reveal">
+            <span class="text-sage-500 font-bold text-sm uppercase tracking-widest">Como podemos ajudar</span>
+            <h2 class="font-serif text-3xl sm:text-4xl font-semibold mt-3 text-sage-900">Especialidades clínicas</h2>
+            <p class="text-gray-500 mt-4">Cada pessoa é única. Por isso, trabalhamos com abordagens personalizadas para a sua necessidade.</p>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-7 mt-14">
+            <!-- Card -->
+            <div class="bg-white rounded-3xl p-8 border border-sage-100 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition reveal">
+                <span class="w-14 h-14 rounded-2xl bg-sage-100 text-sage-600 flex items-center justify-center text-2xl"><i class="fa-solid fa-wind"></i></span>
+                <h3 class="font-serif text-xl font-semibold mt-5 text-sage-900">Ansiedade & Estresse</h3>
+                <p class="text-gray-500 text-sm mt-3 leading-relaxed">Técnicas práticas de TCC para controlar crises, pensamentos acelerados, insônia e sintomas físicos da ansiedade.</p>
+                <a href="https://wa.me/5521983228129?text=Ol%C3%A1%21%20Preciso%20de%20ajuda%20com%20ansiedade%20e%20estresse.%20Quero%20agendar%20uma%20sess%C3%A3o%20na%20Mente%20Serena." target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-sage-600 font-semibold text-sm mt-5 hover:gap-3 transition-all">Agendar pelo WhatsApp <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="bg-white rounded-3xl p-8 border border-sage-100 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition reveal">
+                <span class="w-14 h-14 rounded-2xl bg-sage-100 text-sage-600 flex items-center justify-center text-2xl"><i class="fa-solid fa-cloud-sun"></i></span>
+                <h3 class="font-serif text-xl font-semibold mt-5 text-sage-900">Depressão & Humor</h3>
+                <p class="text-gray-500 text-sm mt-3 leading-relaxed">Acolhimento e tratamento estruturado para tristeza persistente, falta de energia, apatia e perda de prazer nas atividades.</p>
+                <a href="https://wa.me/5521983228129?text=Ol%C3%A1%21%20Estou%20passando%20por%20um%20momento%20dif%C3%ADcil%20e%20gostaria%20de%20conversar%20sobre%20tratamento%20para%20depress%C3%A3o." target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-sage-600 font-semibold text-sm mt-5 hover:gap-3 transition-all">Agendar pelo WhatsApp <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="bg-white rounded-3xl p-8 border border-sage-100 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition reveal">
+                <span class="w-14 h-14 rounded-2xl bg-sage-100 text-sage-600 flex items-center justify-center text-2xl"><i class="fa-solid fa-people-arrows"></i></span>
+                <h3 class="font-serif text-xl font-semibold mt-5 text-sage-900">Terapia de Casal</h3>
+                <p class="text-gray-500 text-sm mt-3 leading-relaxed">Mediação de conflitos, reconstrução da confiança, comunicação não violenta e fortalecimento do vínculo afetivo.</p>
+                <a href="https://wa.me/5521983228129?text=Ol%C3%A1%21%20Tenho%20interesse%20em%20terapia%20de%20casal%20na%20Cl%C3%ADnica%20Mente%20Serena.%20Como%20funciona%3F" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-sage-600 font-semibold text-sm mt-5 hover:gap-3 transition-all">Agendar pelo WhatsApp <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="bg-white rounded-3xl p-8 border border-sage-100 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition reveal">
+                <span class="w-14 h-14 rounded-2xl bg-sage-100 text-sage-600 flex items-center justify-center text-2xl"><i class="fa-solid fa-child-reaching"></i></span>
+                <h3 class="font-serif text-xl font-semibold mt-5 text-sage-900">Psicologia Infantil</h3>
+                <p class="text-gray-500 text-sm mt-3 leading-relaxed">Atendimento lúdico para crianças com dificuldades emocionais, comportamentais, escolares ou de socialização.</p>
+                <a href="https://wa.me/5521983228129?text=Ol%C3%A1%21%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20psicologia%20infantil%20para%20meu%20filho(a)." target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-sage-600 font-semibold text-sm mt-5 hover:gap-3 transition-all">Agendar pelo WhatsApp <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="bg-white rounded-3xl p-8 border border-sage-100 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition reveal">
+                <span class="w-14 h-14 rounded-2xl bg-sage-100 text-sage-600 flex items-center justify-center text-2xl"><i class="fa-solid fa-brain"></i></span>
+                <h3 class="font-serif text-xl font-semibold mt-5 text-sage-900">TCC & Autoconhecimento</h3>
+                <p class="text-gray-500 text-sm mt-3 leading-relaxed">Terapia Cognitivo-Comportamental para ressignificar padrões de pensamento e desenvolver inteligência emocional.</p>
+                <a href="https://wa.me/5521983228129?text=Ol%C3%A1%21%20Quero%20saber%20mais%20sobre%20terapia%20cognitivo-comportamental%20(TCC)%20na%20Mente%20Serena." target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-sage-600 font-semibold text-sm mt-5 hover:gap-3 transition-all">Agendar pelo WhatsApp <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="bg-white rounded-3xl p-8 border border-sage-100 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition reveal">
+                <span class="w-14 h-14 rounded-2xl bg-sage-100 text-sage-600 flex items-center justify-center text-2xl"><i class="fa-solid fa-briefcase"></i></span>
+                <h3 class="font-serif text-xl font-semibold mt-5 text-sage-900">Burnout & Carreira</h3>
+                <p class="text-gray-500 text-sm mt-3 leading-relaxed">Suporte para esgotamento profissional, transições de carreira, síndrome do impostor e equilíbrio vida-trabalho.</p>
+                <a href="https://wa.me/5521983228129?text=Ol%C3%A1%21%20Estou%20com%20sintomas%20de%20burnout%20e%20preciso%20de%20acompanhamento%20psicol%C3%B3gico." target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-sage-600 font-semibold text-sm mt-5 hover:gap-3 transition-all">Agendar pelo WhatsApp <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Como funciona -->
+    <section id="como-funciona" class="bg-sage-900 leaf-pattern text-white py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto reveal">
+                <span class="text-sage-300 font-bold text-sm uppercase tracking-widest">Simples e acolhedor</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-semibold mt-3">Como funciona o primeiro passo</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-10 mt-16">
+                <div class="text-center reveal">
+                    <div class="w-16 h-16 mx-auto rounded-full bg-sage-700 border-2 border-sage-500 flex items-center justify-center font-serif text-2xl font-semibold">1</div>
+                    <h3 class="font-semibold text-lg mt-6">Chame no WhatsApp</h3>
+                    <p class="text-sage-200/80 text-sm mt-3 leading-relaxed">Envie uma mensagem e conte brevemente o que está sentindo. Nossa equipe responde com empatia e sem julgamentos.</p>
+                </div>
+                <div class="text-center reveal">
+                    <div class="w-16 h-16 mx-auto rounded-full bg-sage-700 border-2 border-sage-500 flex items-center justify-center font-serif text-2xl font-semibold">2</div>
+                    <h3 class="font-semibold text-lg mt-6">Conversa de acolhimento</h3>
+                    <p class="text-sage-200/80 text-sm mt-3 leading-relaxed">Realizamos uma primeira conversa sem custo para entender sua necessidade e indicar o profissional ideal para você.</p>
+                </div>
+                <div class="text-center reveal">
+                    <div class="w-16 h-16 mx-auto rounded-full bg-sage-700 border-2 border-sage-500 flex items-center justify-center font-serif text-2xl font-semibold">3</div>
+                    <h3 class="font-semibold text-lg mt-6">Início do tratamento</h3>
+                    <p class="text-sage-200/80 text-sm mt-3 leading-relaxed">Sessões semanais de 50 minutos, presenciais em Copacabana ou online, com plano terapêutico personalizado.</p>
+                </div>
+            </div>
+            <div class="text-center mt-14 reveal">
+                <a href="https://wa.me/5521983228129?text=Ol%C3%A1%21%20Quero%20dar%20o%20primeiro%20passo%20e%20agendar%20minha%20conversa%20de%20acolhimento%20gratuita." target="_blank" rel="noopener" class="inline-flex items-center gap-2.5 bg-[#25D366] hover:bg-[#1ebe5b] text-white font-bold px-9 py-4 rounded-full transition shadow-lg shadow-black/25">
+                    <i class="fa-brands fa-whatsapp text-xl"></i> Dar o primeiro passo agora
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipe -->
+    <section id="equipe" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+        <div class="grid lg:grid-cols-2 gap-14 items-center">
+            <div class="reveal">
+                <img src="https://images.unsplash.com/photo-1573497620053-ea5300f94f21?auto=format&fit=crop&w=900&q=80" alt="Psicóloga da clínica" class="rounded-[2.5rem] shadow-xl object-cover h-[480px] w-full">
+            </div>
+            <div class="reveal">
+                <span class="text-sage-500 font-bold text-sm uppercase tracking-widest">Nossa equipe</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-semibold mt-3 text-sage-900">Profissionais que acolhem de verdade</h2>
+                <p class="text-gray-500 mt-5 leading-relaxed">Nossa equipe é formada por 8 psicólogos com registro ativo no CRP, especializações em TCC, psicanálise, terapia sistêmica e neuropsicologia. Aqui, você não é apenas mais um paciente — é uma história que merece ser ouvida.</p>
+                <ul class="mt-7 space-y-4 text-sm">
+                    <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-sage-500 mt-0.5"></i> <span><strong>Dra. Helena Vasques</strong> — CRP 05/45231 · Coordenadora clínica, especialista em ansiedade e TCC</span></li>
+                    <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-sage-500 mt-0.5"></i> <span><strong>Dr. Rafael Monteiro</strong> — CRP 05/51890 · Terapia de casal e familiar</span></li>
+                    <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-sage-500 mt-0.5"></i> <span><strong>Dra. Camila Nunes</strong> — CRP 05/60214 · Psicologia infantil e avaliação neuropsicológica</span></li>
+                </ul>
+                <a href="https://wa.me/5521983228129?text=Ol%C3%A1%21%20Quero%20saber%20qual%20profissional%20da%20Mente%20Serena%20%C3%A9%20o%20mais%20indicado%20para%20o%20meu%20caso." target="_blank" rel="noopener" class="inline-flex items-center gap-2.5 bg-sage-600 hover:bg-sage-700 text-white font-semibold px-7 py-3.5 rounded-full mt-9 transition shadow-md shadow-sage-600/20">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> Encontrar meu psicólogo ideal
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section id="depoimentos" class="bg-sand-100 py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto reveal">
+                <span class="text-sage-500 font-bold text-sm uppercase tracking-widest">Histórias reais</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-semibold mt-3 text-sage-900">Quem já deu o primeiro passo</h2>
+                <p class="text-gray-500 mt-4 text-sm">Depoimentos publicados com autorização, nomes alterados para preservar a privacidade.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-7 mt-14">
+                <div class="bg-white rounded-3xl p-8 shadow-sm border border-sage-100 reveal">
+                    <div class="text-amber-400 text-sm"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="text-gray-600 text-sm mt-4 leading-relaxed italic">"Cheguei com crises de ansiedade que me impediam de trabalhar. Em 4 meses de TCC com a Dra. Helena, voltei a ter controle da minha vida. O acolhimento desde o primeiro WhatsApp fez toda a diferença."</p>
+                    <p class="mt-5 font-semibold text-sm text-sage-800">M. S., 34 anos</p>
+                    <p class="text-xs text-gray-400">Tratamento para ansiedade</p>
+                </div>
+                <div class="bg-white rounded-3xl p-8 shadow-sm border border-sage-100 reveal">
+                    <div class="text-amber-400 text-sm"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="text-gray-600 text-sm mt-4 leading-relaxed italic">"Eu e meu marido estávamos à beira da separação. A terapia de casal nos ensinou a conversar de novo. Hoje somos mais parceiros do que nunca. Gratidão ao Dr. Rafael."</p>
+                    <p class="mt-5 font-semibold text-sm text-sage-800">A. e F., casados há 9 anos</p>
+                    <p class="text-xs text-gray-400">Terapia de casal</p>
+                </div>
+                <div class="bg-white rounded-3xl p-8 shadow-sm border border-sage-100 reveal">
+                    <div class="text-amber-400 text-sm"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="text-gray-600 text-sm mt-4 leading-relaxed italic">"Moro em São Paulo e faço terapia online com a clínica há 1 ano. A qualidade do atendimento é impressionante, nem parece que é à distância. Recomendo de olhos fechados."</p>
+                    <p class="mt-5 font-semibold text-sm text-sage-800">R. T., 28 anos</p>
+                    <p class="text-xs text-gray-400">Psicoterapia online</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+        <div class="text-center reveal">
+            <span class="text-sage-500 font-bold text-sm uppercase tracking-widest">Dúvidas frequentes</span>
+            <h2 class="font-serif text-3xl sm:text-4xl font-semibold mt-3 text-sage-900">Perguntas & respostas</h2>
+        </div>
+        <div class="mt-12 space-y-4">
+            <details class="bg-white rounded-2xl border border-sage-100 shadow-sm overflow-hidden reveal">
+                <summary class="flex items-center justify-between p-6 font-semibold text-sage-900">Qual o valor da sessão? <i class="fa-solid fa-plus faq-icon text-sage-400"></i></summary>
+                <p class="px-6 pb-6 text-sm text-gray-500 leading-relaxed">Os valores variam conforme o profissional e o formato (presencial ou online). Temos condições especiais para pacotes mensais e atendimento social. Chame no WhatsApp para receber a tabela completa, sem compromisso.</p>
+            </details>
+            <details class="bg-white rounded-2xl border border-sage-100 shadow-sm overflow-hidden reveal">
+                <summary class="flex items-center justify-between p-6 font-semibold text-sage-900">Atendem por convênio? <i class="fa-solid fa-plus faq-icon text-sage-400"></i></summary>
+                <p class="px-6 pb-6 text-sm text-gray-500 leading-relaxed">Trabalhamos na modalidade particular, mas fornecemos nota fiscal e recibo detalhado para reembolso junto ao seu plano de saúde. A maioria dos convênios reembolsa parte do valor.</p>
+            </details>
+            <details class="bg-white rounded-2xl border border-sage-100 shadow-sm overflow-hidden reveal">
+                <summary class="flex items-center justify-between p-6 font-semibold text-sage-900">A terapia online funciona mesmo? <i class="fa-solid fa-plus faq-icon text-sage-400"></i></summary>
+                <p class="px-6 pb-6 text-sm text-gray-500 leading-relaxed">Sim. Estudos científicos comprovam que a psicoterapia online tem eficácia equivalente à presencial para a maioria dos casos. Utilizamos plataforma segura e criptografada, com o mesmo sigilo do consultório.</p>
+            </details>
+            <details class="bg-white rounded-2xl border border-sage-100 shadow-sm overflow-hidden reveal">
+                <summary class="flex items-center justify-between p-6 font-semibold text-sage-900">Tudo que eu falar é confidencial? <i class="fa-solid fa-plus faq-icon text-sage-400"></i></summary>
+                <p class="px-6 pb-6 text-sm text-gray-500 leading-relaxed">Absolutamente tudo. O sigilo profissional é garantido pelo Código de Ética do Psicólogo (CRP) e só pode ser quebrado em situações extremas previstas em lei, como risco iminente à vida.</p>
+            </details>
+            <details class="bg-white rounded-2xl border border-sage-100 shadow-sm overflow-hidden reveal">
+                <summary class="flex items-center justify-between p-6 font-semibold text-sage-900">Com que frequência são as sessões? <i class="fa-solid fa-plus faq-icon text-sage-400"></i></summary>
+                <p class="px-6 pb-6 text-sm text-gray-500 leading-relaxed">O padrão é 1 sessão semanal de 50 minutos, sempre no mesmo dia e horário. Em fases mais delicadas, o profissional pode sugerir 2 sessões por semana. A frequência é sempre combinada com você.</p>
+            </details>
+        </div>
+        <div class="text-center mt-10 reveal">
+            <p class="text-gray-500 text-sm mb-5">Ficou com alguma dúvida? Pergunte diretamente para nossa equipe:</p>
+            <a href="https://wa.me/5521983228129?text=Ol%C3%A1%21%20Tenho%20uma%20d%C3%BAvida%20sobre%20o%20atendimento%20da%20Cl%C3%ADnica%20Mente%20Serena." target="_blank" rel="noopener" class="inline-flex items-center gap-2.5 bg-sage-600 hover:bg-sage-700 text-white font-semibold px-8 py-3.5 rounded-full transition shadow-md shadow-sage-600/20">
+                <i class="fa-brands fa-whatsapp text-lg"></i> Tirar dúvida no WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="hero-gradient leaf-pattern text-white py-20">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center reveal">
+            <i class="fa-solid fa-spa text-4xl text-sage-300"></i>
+            <h2 class="font-serif text-3xl sm:text-4xl font-semibold mt-5">Você não precisa passar por isso sozinho(a).</h2>
+            <p class="text-sage-100/90 mt-5 leading-relaxed">A conversa de acolhimento é gratuita e sem compromisso. Nossa equipe está pronta para ouvir você agora mesmo — inclusive aos sábados.</p>
+            <a href="https://wa.me/5521983228129?text=Ol%C3%A1%21%20Quero%20conversar%20com%20a%20equipe%20da%20Cl%C3%ADnica%20Mente%20Serena.%20Preciso%20de%20acolhimento." target="_blank" rel="noopener" class="inline-flex items-center gap-3 bg-[#25D366] hover:bg-[#1ebe5b] text-white font-bold px-10 py-4.5 rounded-full text-lg mt-8 transition shadow-xl shadow-black/25 py-4">
+                <i class="fa-brands fa-whatsapp text-2xl"></i> Conversar agora — (21) 98322-8129
+            </a>
+            <p class="text-xs text-sage-200/70 mt-5"><i class="fa-regular fa-clock mr-1"></i> Seg a Sex, 8h às 20h · Sáb, 8h às 14h · Retornamos em até 30 minutos</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-sage-200/70 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-3 gap-10 text-sm">
+            <div>
+                <div class="flex items-center">
+                    <img src="logo-footer.svg" alt="Mente Serena - Clínica de Psicologia" class="h-11 w-auto object-contain">
+                </div>
+                <p class="mt-4 leading-relaxed">Clínica de psicologia dedicada à saúde mental e ao bem-estar emocional. Presencial em Copacabana, RJ, e online para todo o Brasil.</p>
+            </div>
+            <div>
+                <p class="text-white font-semibold mb-4">Contato</p>
+                <ul class="space-y-3">
+                    <li><i class="fa-brands fa-whatsapp text-[#25D366] mr-2"></i> <a href="https://wa.me/5521983228129" target="_blank" rel="noopener" class="hover:text-white transition">(21) 98322-8129</a></li>
+                    <li><i class="fa-solid fa-location-dot text-sage-400 mr-2"></i> Av. Nossa Sra. de Copacabana, 680 · Sala 407 — Rio de Janeiro</li>
+                    <li><i class="fa-regular fa-envelope text-sage-400 mr-2"></i> contato@menteserena.com.br</li>
+                </ul>
+            </div>
+            <div>
+                <p class="text-white font-semibold mb-4">Importante</p>
+                <p class="leading-relaxed">Em caso de crise ou emergência, ligue para o <strong class="text-white">CVV — 188</strong> (24h, gratuito) ou procure o pronto-socorro mais próximo.</p>
+                <p class="mt-4 text-xs">Responsável técnica: Dra. Helena Vasques · CRP 05/45231</p>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10 pt-6 border-t border-white/10 text-xs text-center">
+            © 2026 Clínica Mente Serena. Todos os direitos reservados.
+        </div>
+    </footer>
+
+    <!-- Botão flutuante WhatsApp -->
+    <a href="https://wa.me/5521983228129?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Cl%C3%ADnica%20Mente%20Serena%20e%20quero%20agendar%20uma%20conversa." target="_blank" rel="noopener" class="fixed bottom-6 right-6 z-50 group" aria-label="Falar no WhatsApp">
+        <span class="absolute -top-11 right-0 bg-dark text-white text-xs font-medium px-3.5 py-2 rounded-xl whitespace-nowrap opacity-0 group-hover:opacity-100 transition shadow-lg">Estamos online 💬</span>
+        <span class="w-16 h-16 rounded-full bg-[#25D366] hover:bg-[#1ebe5b] text-white flex items-center justify-center text-3xl pulse-ring transition shadow-xl"><i class="fa-brands fa-whatsapp"></i></span>
+    </a>
+
+    <script>
+        // Menu hambúrguer mobile
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const open = !menu.classList.contains('hidden');
+            if (open) {
+                menu.classList.add('hidden');
+            } else {
+                menu.classList.remove('hidden');
+            }
+        }
+        function closeMenu() {
+            document.getElementById('mobile-menu').classList.add('hidden');
+        }
+        // Animação de revelação ao scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+        }, { threshold: 0.12 });
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="ms-fav-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#283b2f"/>
+      <stop offset="50%" stop-color="#3a5844"/>
+      <stop offset="100%" stop-color="#5d8a69"/>
+    </linearGradient>
+    <linearGradient id="ms-fav-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c9a25e"/>
+      <stop offset="50%" stop-color="#dfba73"/>
+      <stop offset="100%" stop-color="#b38a42"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#ms-fav-grad)"/>
+  <circle cx="32" cy="32" r="26" fill="none" stroke="url(#ms-fav-gold)" stroke-width="1.2" stroke-dasharray="3 2" opacity="0.6"/>
+  <g transform="translate(3, 3)">
+    <path d="M29 44 C22 44 14 38 14 28 C14 20 21 14 24 12 C24 17 25 24 29 27 C28 33 28.5 39 29 44 Z" fill="#7da887"/>
+    <path d="M29 44 C36 44 44 38 44 28 C44 20 37 14 34 12 C34 17 33 24 29 27 C30 33 29.5 39 29 44 Z" fill="#a8c6ae"/>
+    <path d="M29 11 C29 11 34 19 34 25 C34 29.5 31.8 32 29 33 C26.2 32 24 29.5 24 25 C24 19 29 11 29 11 Z" fill="url(#ms-fav-gold)"/>
+    <path d="M19 36 C22 42 26 44.5 29 44.5 C32 44.5 36 42 39 36 C37 41 33 46 29 46 C25 46 21 41 19 36 Z" fill="#cddfd1"/>
+    <circle cx="29" cy="18" r="2.2" fill="#ffffff"/>
+  </g>
+</svg>

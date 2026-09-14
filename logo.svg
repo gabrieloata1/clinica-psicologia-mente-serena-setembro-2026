@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 70" fill="none" width="100%" height="100%">
+  <defs>
+    <linearGradient id="ms-sage-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#283b2f"/>
+      <stop offset="50%" stop-color="#3a5844"/>
+      <stop offset="100%" stop-color="#5d8a69"/>
+    </linearGradient>
+    <linearGradient id="ms-leaf-grad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#476e52"/>
+      <stop offset="100%" stop-color="#7da887"/>
+    </linearGradient>
+    <linearGradient id="ms-gold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c9a25e"/>
+      <stop offset="50%" stop-color="#dfba73"/>
+      <stop offset="100%" stop-color="#b38a42"/>
+    </linearGradient>
+    <filter id="ms-soft-shadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#283b2f" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Símbolo Emblemático (Zen / Mente Florescendo) -->
+  <g transform="translate(6, 6)" filter="url(#ms-soft-shadow)">
+    <!-- Círculo Base Acolhedor -->
+    <circle cx="29" cy="29" r="28" fill="#f4f7f4" stroke="#cddfd1" stroke-width="1.5"/>
+    <circle cx="29" cy="29" r="25" fill="none" stroke="url(#ms-gold-grad)" stroke-width="0.8" stroke-dasharray="2 2.5" opacity="0.8"/>
+
+    <!-- Folha / Mente em Crescimento - Lado Esquerdo -->
+    <path d="M29 44 C22 44 14 38 14 28 C14 20 21 14 24 12 C24 17 25 24 29 27 C28 33 28.5 39 29 44 Z" fill="url(#ms-sage-grad)"/>
+
+    <!-- Folha / Harmonia - Lado Direito -->
+    <path d="M29 44 C36 44 44 38 44 28 C44 20 37 14 34 12 C34 17 33 24 29 27 C30 33 29.5 39 29 44 Z" fill="url(#ms-leaf-grad)"/>
+
+    <!-- Flor de Lótus / Chama Central da Consciência -->
+    <path d="M29 11 C29 11 34 19 34 25 C34 29.5 31.8 32 29 33 C26.2 32 24 29.5 24 25 C24 19 29 11 29 11 Z" fill="url(#ms-gold-grad)"/>
+
+    <!-- Base Acolhedora / Mãos de Cuidado -->
+    <path d="M19 36 C22 42 26 44.5 29 44.5 C32 44.5 36 42 39 36 C37 41 33 46 29 46 C25 46 21 41 19 36 Z" fill="#3a5844"/>
+
+    <!-- Ponto Zen / Ponto de Atenção Plena (Mindfulness) -->
+    <circle cx="29" cy="18" r="2.2" fill="#ffffff"/>
+    <circle cx="29" cy="18" r="1.2" fill="url(#ms-gold-grad)"/>
+  </g>
+
+  <!-- Tipografia da Marca (Versão Header / Fundo Claro) -->
+  <g transform="translate(74, 11)">
+    <!-- Nome Principal -->
+    <text x="0" y="32" font-family="'Fraunces', 'Playfair Display', Georgia, serif" font-size="28" font-weight="700" fill="#1e2b24" letter-spacing="-0.3">
+      Mente <tspan font-style="italic" font-weight="500" fill="#476e52">Serena</tspan>
+    </text>
+
+    <!-- Linha divisória de requinte dourada -->
+    <line x1="1" y1="39" x2="225" y2="39" stroke="url(#ms-gold-grad)" stroke-width="1" opacity="0.6"/>
+
+    <!-- Tagline / Posicionamento -->
+    <text x="2" y="49" font-family="'Plus Jakarta Sans', 'Inter', system-ui, sans-serif" font-size="8" font-weight="700" fill="#5d8a69" letter-spacing="2.8">
+      CLÍNICA DE PSICOLOGIA &amp; BEM-ESTAR
+    </text>
+  </g>
+</svg>
